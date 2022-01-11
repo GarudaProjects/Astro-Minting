@@ -81,10 +81,10 @@ export const StyledImg = styled.img`
   border-radius: 100%;
   width: 200px;
   @media (min-width: 900px) {
-    width: 250px;
+    width: 300px;
   }
   @media (min-width: 1000px) {
-    width: 300px;
+    width: 350px;
   }
   transition: width 0.5s;
 `;
