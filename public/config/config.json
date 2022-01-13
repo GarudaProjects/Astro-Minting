@@ -6,7 +6,7 @@
     "SYMBOL": "Matic",
     "ID": 137
   },
-  "NFT_NAME": "Astro NFT",
+  "NFT_NAME": "Astrozens",
   "SYMBOL": "ASTRONFT",
   "MAX_SUPPLY": 992,
   "WEI_COST": 4000000000000000000,
@@ -14,5 +14,5 @@
   "GAS_LIMIT": 285000,
   "MARKETPLACE": "Opeansea",
   "MARKETPLACE_LINK": "https://opensea.io/collection/astro-nft",
-  "SHOW_BACKGROUND": false
+  "SHOW_BACKGROUND": true
 }
