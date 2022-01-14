@@ -8,7 +8,7 @@
   },
   "NFT_NAME": "Astrozens",
   "SYMBOL": "Astrozens",
-  "MAX_SUPPLY": 1,111,
+  "MAX_SUPPLY": 1.111,
   "WEI_COST": 4000000000000000000,
   "DISPLAY_COST": 0.1,
   "GAS_LIMIT": 285000,
