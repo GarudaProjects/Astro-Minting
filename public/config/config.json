@@ -2,15 +2,15 @@
   "CONTRACT_ADDRESS": "0x0b18b900F7375AABDa00EEaC988116C33fb05BD2",
   "SCAN_LINK": "https://polygonscan.com/token/0x0b18b900F7375AABDa00EEaC988116C33fb05BD2",
   "NETWORK": {
-    "NAME": "Polygon",
-    "SYMBOL": "Matic",
-    "ID": 137
+    "NAME": "Ethereum",
+    "SYMBOL": "ETH",
+    "ID": 1
   },
   "NFT_NAME": "Astrozens",
   "SYMBOL": "Astrozens",
   "MAX_SUPPLY": 1111,
   "WEI_COST": 4000000000000000000,
-  "DISPLAY_COST": 0.1,
+  "DISPLAY_COST": 0.3,
   "GAS_LIMIT": 285000,
   "MARKETPLACE": "Opensea",
   "MARKETPLACE_LINK": "https://opensea.io/collection/astro-nft",
