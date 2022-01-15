@@ -254,16 +254,6 @@ function App() {
               }}
             >
               <StyledButton
-                onClick={(e) => {
-                  window.open("/config/roadmap.png", "_blank");
-                }}
-                style={{
-                  margin: "5px",
-                }}
-              >
-                Roadmap
-              </StyledButton>
-              <StyledButton
                 style={{
                   margin: "5px",
                 }}
