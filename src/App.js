@@ -58,6 +58,10 @@ export const ResponsiveWrapper = styled.div`
   flex: 0;
   -webkit-box-pack: center;
   -webkit-box-align: center;
+  background-image: none;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
   flex-direction: column;
   justify-content: stretched;
   align-items: center;
