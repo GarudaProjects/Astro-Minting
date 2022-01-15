@@ -10,7 +10,7 @@
   "SYMBOL": "Astrozens",
   "MAX_SUPPLY": 1111,
   "WEI_COST": 4000000000000000000,
-  "DISPLAY_COST": 0.3,
+  "DISPLAY_COST": 1,
   "GAS_LIMIT": 285000,
   "MARKETPLACE": "Opensea",
   "MARKETPLACE_LINK": "https://opensea.io/collection/astro-nft",
