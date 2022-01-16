@@ -227,9 +227,6 @@ function App() {
           <s.Container flex={1} jc={"center"} ai={"center"}>
             <StyledImg alt={"Astrozens Image 1"} src={"/config/images/Astrozens-1.gif"} />
           </s.Container>
-          <s.Container flex={1} jc={"center"} ai={"center"}>
-            <StyledImg2 alt={"Astrozens Image 2"} src={"/config/images/Astrozens-1.gif"} />
-          </s.Container>
           <s.SpacerLarge />
           <s.Container
             flex={2}
