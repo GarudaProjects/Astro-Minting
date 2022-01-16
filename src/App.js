@@ -112,10 +112,6 @@ export const StyledImg2 = styled.img`
   transition: width 0.5s;
 `;
 
-export const StyledLink = styled.a`
-  text-decoration: none;
-`;
-
 function App() {
   const dispatch = useDispatch();
   const blockchain = useSelector((state) => state.blockchain);
