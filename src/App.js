@@ -403,9 +403,10 @@ function App() {
             <StyledImg
               alt={"example"}
               src={"/config/images/Astrozens-1.gif"}
-              style={{ transform: "scaleX(-2)" }}
+              style={{ transform: "scaleX(-0)" }}
             />
           </s.Container>
+          <s.SpacerLarge />
           <s.Container flex={1} jc={"center"} ai={"center"}>
             <StyledImg2
               alt={"example"}
