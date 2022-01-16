@@ -98,6 +98,24 @@ export const StyledLink = styled.a`
   text-decoration: none;
 `;
 
+export const StyledImg2 = styled.img`
+  box-shadow: 0px 5px 11px 2px rgba(0, 0, 0, 0.7);
+  background-color: var(--accent);
+  border-radius: 100%;
+  width: 200px;
+  @media (min-width: 900px) {
+    width: 250px;
+  }
+  @media (min-width: 1000px) {
+    width: 300px;
+  }
+  transition: width 0.5s;
+`;
+
+export const StyledLink = styled.a`
+  text-decoration: none;
+`;
+
 function App() {
   const dispatch = useDispatch();
   const blockchain = useSelector((state) => state.blockchain);
@@ -211,7 +229,10 @@ function App() {
         <s.SpacerSmall />
         <ResponsiveWrapper flex={1} style={{ padding: 24 }} test>
           <s.Container flex={1} jc={"center"} ai={"center"}>
-            <StyledImg alt={"example"} src={"/config/images/Astrozens-1.gif"} />
+            <StyledImg alt={"Astrozens Image 1"} src={"/config/images/Astrozens-1.gif"} />
+          </s.Container>
+          <s.Container flex={1} jc={"center"} ai={"center"}>
+            <StyledImg2 alt={"Astrozens Image 2"} src={"/config/images/Astrozens-1.gif"} />
           </s.Container>
           <s.SpacerLarge />
           <s.Container
@@ -384,6 +405,13 @@ function App() {
           <s.SpacerLarge />
           <s.Container flex={1} jc={"center"} ai={"center"}>
             <StyledImg
+              alt={"example"}
+              src={"/config/images/Astrozens-1.gif"}
+              style={{ transform: "scaleX(-1)" }}
+            />
+          </s.Container>
+          <s.Container flex={1} jc={"center"} ai={"center"}>
+            <StyledImg2
               alt={"example"}
               src={"/config/images/Astrozens-1.gif"}
               style={{ transform: "scaleX(-1)" }}
