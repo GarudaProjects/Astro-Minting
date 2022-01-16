@@ -399,7 +399,7 @@ function App() {
           <s.Container flex={1} jc={"center"} ai={"center"}>
             <StyledImg2
               alt={"example"}
-              src={"/config/images/Astrozens-1.gif"}
+              src={"/config/images/example.gif"}
               style={{ transform: "scaleX(-1)" }}
             />
           </s.Container>
