@@ -221,6 +221,8 @@ function App() {
             style={{
               backgroundColor: "var(--accent)",
               padding: 24,
+              borderRadius: 24,
+              border: "2px dashed var(--secondary)",
               boxShadow: "0px 5px 11px 2px rgba(0,0,0,0.7)",
             }}
           >
