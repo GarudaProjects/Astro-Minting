@@ -222,8 +222,8 @@ function App() {
               backgroundColor: "var(--accent)",
               padding: 24,
               borderRadius: 24,
-              //box-shadow: 0px 0px 32px rgb(0 22 101 / 50%);
-              boxShadow: "0px 0px 32px rgb(0,22,11,0.7)",
+              //box-shadow: "0px 0px 32px rgb(0 22 101 / 50%)",
+              boxShadow: "0px 0px 32px rgb(0,22,101,0.7)",
             }}
           >
             <s.TextTitle
