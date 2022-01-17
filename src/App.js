@@ -12,15 +12,13 @@ export const StyledButton = styled.button`
   padding: 10px;
   border-radius: 50px;
   border: none;
-  //background: linear-gradient(to left, #D2042D 0%, #1F51FF 100%);
   background-color: var(--secondary);
   padding: 10px;
   font-weight: bold;
   color: var(--secondary-text);
   width: 100px;
   cursor: pointer;
-  box-shadow: 0px 6px 32px rgb(0, 250, 101, 0.3);
-  //boxShadow: "0px 0px 32px rgb(0 22 101 / 50%)",
+  box-shadow: 0px 6px 0px -2px rgba(250, 250, 250, 0.3);
   -webkit-box-shadow: 0px 6px 0px -2px rgba(250, 250, 250, 0.3);
   -moz-box-shadow: 0px 6px 0px -2px rgba(250, 250, 250, 0.3);
   :active {
@@ -57,16 +55,10 @@ export const StyledRoundButton = styled.button`
 
 export const ResponsiveWrapper = styled.div`
   display: flex;
-  flex: 0;
-  -webkit-box-pack: center;
-  -webkit-box-align: center;
-  background-image: none;
-  background-size: cover;
-  background-position-x: center;
-  background-position-y: center;
+  flex: 1;
   flex-direction: column;
   justify-content: stretched;
-  align-items: center;
+  align-items: stretched;
   width: 100%;
   @media (min-width: 767px) {
     flex-direction: row;
@@ -84,6 +76,7 @@ export const StyledLogo = styled.img`
 
 export const StyledImg = styled.img`
   box-shadow: 0px 5px 11px 2px rgba(0, 0, 0, 0.7);
+  border: 4px dashed var(--secondary);
   background-color: var(--accent);
   border-radius: 100%;
   width: 200px;
@@ -97,21 +90,8 @@ export const StyledImg = styled.img`
 `;
 
 export const StyledLink = styled.a`
+  color: var(--secondary);
   text-decoration: none;
-`;
-
-export const StyledImg2 = styled.img`
-  box-shadow: 0px 5px 11px 2px rgba(0, 0, 0, 0.7);
-  background-color: var(--accent);
-  border-radius: 100%;
-  width: 200px;
-  @media (min-width: 900px) {
-    width: 250px;
-  }
-  @media (min-width: 1000px) {
-    width: 300px;
-  }
-  transition: width 0.5s;
 `;
 
 function App() {
@@ -219,7 +199,7 @@ function App() {
         flex={1}
         ai={"center"}
         style={{ padding: 24, backgroundColor: "var(--primary)" }}
-        image={CONFIG.SHOW_BACKGROUND ? "/config/images/background2.jpg" : null}
+        image={CONFIG.SHOW_BACKGROUND ? "/config/images/bg.png" : null}
       >
         <a href={CONFIG.MARKETPLACE_LINK}>
           <StyledLogo alt={"logo"} src={"/config/images/logo.png"} />
@@ -227,7 +207,7 @@ function App() {
         <s.SpacerSmall />
         <ResponsiveWrapper flex={1} style={{ padding: 24 }} test>
           <s.Container flex={1} jc={"center"} ai={"center"}>
-            <StyledImg alt={"Astrozens Image 1"} src={"/config/images/Astrozens-1.gif"} />
+            <StyledImg alt={"example"} src={"/config/images/example.gif"} />
           </s.Container>
           <s.SpacerLarge />
           <s.Container
@@ -238,8 +218,8 @@ function App() {
               backgroundColor: "var(--accent)",
               padding: 24,
               borderRadius: 24,
-              boxShadow: "0px 0px 32px rgb(0 22 101 / 50%)",
-              //boxShadow: "0px 0px 32px rgb(0,22,101,0.7)",
+              border: "4px dashed var(--secondary)",
+              boxShadow: "0px 5px 11px 2px rgba(0,0,0,0.7)",
             }}
           >
             <s.TextTitle
@@ -267,6 +247,26 @@ function App() {
                 textAlign: "center",
               }}
             >
+              <StyledButton
+                onClick={(e) => {
+                  window.open("/config/roadmap.pdf", "_blank");
+                }}
+                style={{
+                  margin: "5px",
+                }}
+              >
+                Roadmap
+              </StyledButton>
+              <StyledButton
+                style={{
+                  margin: "5px",
+                }}
+                onClick={(e) => {
+                  window.open(CONFIG.MARKETPLACE_LINK, "_blank");
+                }}
+              >
+                {CONFIG.MARKETPLACE}
+              </StyledButton>
             </span>
             <s.SpacerSmall />
             {Number(data.totalSupply) >= CONFIG.MAX_SUPPLY ? (
@@ -399,7 +399,7 @@ function App() {
           </s.Container>
           <s.SpacerLarge />
           <s.Container flex={1} jc={"center"} ai={"center"}>
-            <StyledImg2
+            <StyledImg
               alt={"example"}
               src={"/config/images/example.gif"}
               style={{ transform: "scaleX(-1)" }}
