@@ -12,8 +12,8 @@ export const StyledButton = styled.button`
   padding: 10px;
   border-radius: 50px;
   border: none;
-  background: linear-gradient(to left, #D2042D 0%, #1F51FF 100%);
-  //background-color: var(--secondary);
+  //background: linear-gradient(to left, #D2042D 0%, #1F51FF 100%);
+  background-color: var(--secondary);
   padding: 10px;
   font-weight: bold;
   color: var(--secondary-text);
