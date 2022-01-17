@@ -12,14 +12,14 @@ export const StyledButton = styled.button`
   padding: 10px;
   border-radius: 50px;
   border: none;
-  background: linear-gradient(to left, #33ccff 0%, #ff99cc 100%);
+  background: linear-gradient(to left, #D2042D 0%, #1F51FF 100%);
   //background-color: var(--secondary);
   padding: 10px;
   font-weight: bold;
   color: var(--secondary-text);
   width: 100px;
   cursor: pointer;
-  box-shadow: 0px 6px 32px rgba(250, 250, 250, 0.3);
+  box-shadow: 0px 6px 32px rgb(0, 250, 101, 0.3);
   //boxShadow: "0px 0px 32px rgb(0 22 101 / 50%)",
   -webkit-box-shadow: 0px 6px 0px -2px rgba(250, 250, 250, 0.3);
   -moz-box-shadow: 0px 6px 0px -2px rgba(250, 250, 250, 0.3);
